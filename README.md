@@ -5,6 +5,7 @@
 
 This project explores the basics of backend development with FastAPI, covering topics like building web servers, managing API routes, handling query and path parameters, integrating databases with SQLModel, and organizing code into services and dependency injection.
 
+The API serves as a learning platform and includes basic CRUD functionality, database integration, and modular API routing, laying the groundwork for more complex features like user authentication, shopping cart management, and order processing in the future.
 
 #### Project Setup:
 Configured the Python environment with dependencies for FastAPI and SQLAlchemy/SQLModel.
