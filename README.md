@@ -1,5 +1,42 @@
-##### E-commerce API
+# E-commerce API
+
+
+## Description: 
 
 This project explores the basics of backend development with FastAPI, covering topics like building web servers, managing API routes, handling query and path parameters, integrating databases with SQLModel, and organizing code into services and dependency injection.
 
 
+#### Project Setup:
+Configured the Python environment with dependencies for FastAPI and SQLAlchemy/SQLModel.
+Set up environment variables for database connectivity.
+ 
+#### Web Server:
+Built a simple web server using FastAPI.
+Started and tested the server with the FastAPI CLI (uvicorn) in development mode.
+
+#### API Development:
+Implemented endpoints with path and query parameters, including optional parameters.
+Designed request bodies and headers for API operations.
+
+#### API Organization:
+Structured API paths using FastAPI routers for modularity and maintainability.
+
+#### Database Integration:
+Configured SQLAlchemy and SQLModel for async database interaction.
+Designed database models and created tables using SQLModel.
+Set up PostgreSQL for data persistence.
+Implemented CRUD operations for interacting with the database.
+
+#### Service Architecture:
+Abstracted CRUD logic into service classes to adhere to clean code principles.
+Used dependency injection to pass services into API path handlers, ensuring scalability and testability.
+
+## Technologies Used:
+
+FastAPI: A modern web framework for building APIs with Python, known for its speed and ease of use.
+
+SQLAlchemy (via SQLModel): An ORM and database toolkit for defining and interacting with databases in Python.
+
+PostgreSQL: A powerful, open-source relational database system used for persistent data storage.
+
+Python: The programming language used to develop the project.
