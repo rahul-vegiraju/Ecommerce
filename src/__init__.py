@@ -14,7 +14,7 @@ version = "v1"
 
 app = FastAPI(
     title = "ecommerce",
-    description= "A Rest API for a ecommerce service",
+    description= "A Rest API for a eco mmerce service",
     version = version,
     lifespan= life_span
 )
