@@ -51,9 +51,7 @@ cd Ecommerce
 
 ###  Create a Virtual Environment and Install Dependencies:
 
-python -m venv env
-source env/bin/activate  
-pip install -r requirements.txt
+python -m venv env, source env/bin/activate, pip install -r requirements.txt
 
 ### Additional commands:
 To Run the project: 
