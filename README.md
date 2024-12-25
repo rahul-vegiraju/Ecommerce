@@ -41,3 +41,25 @@ SQLAlchemy (via SQLModel): An ORM and database toolkit for defining and interact
 PostgreSQL: A powerful, open-source relational database system used for persistent data storage.
 
 Python: The programming language used to develop the project.
+
+## Commands For You to Use:
+
+### Cloning Repository: 
+git clone https://github.com/rahul-vegiraju/Ecommerce.git
+
+cd Ecommerce
+
+###  Create a Virtual Environment and Install Dependencies:
+
+python -m venv env
+source env/bin/activate  
+pip install -r requirements.txt
+
+### Additional commands:
+To Run the project: 
+fastapi dev src/
+
+Might need to install: 
+pip install fastapi, pip install --upgrade pip, pip install "fastapi[standard]", pip install psycopg2-binarypip, pip install asyncpg, pip install pydantic-settings, pip install sqlmodel
+
+
