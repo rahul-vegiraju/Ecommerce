@@ -1,5 +1,6 @@
 from fastapi import FastAPI
 from src.orders.routes import order_router
+from src.auth.routes import auth_router
 from contextlib import asynccontextmanager
 from src.db.main import init_db
 
@@ -20,3 +21,5 @@ app = FastAPI(
 )
 
 app.include_router(order_router, prefix = f"/api/{version}/orders", tags=['orders'])
+
+app.include_router(auth_router, prefix = f"/api/{version}/auth", tags=['auth'])

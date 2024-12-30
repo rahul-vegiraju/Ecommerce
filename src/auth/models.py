@@ -1,25 +1,28 @@
-from sqlmodel import SQLModel, Field, Column
-import sqlalchemy.dialects.postgresql as pg
+from sqlmodel import SQLModel, Field
+from sqlalchemy.dialects.postgresql import UUID, TIMESTAMP
 import uuid
 from datetime import datetime
 
-class User:
-    __tablename__ = 'users'
-    uid : uuid.UUID = Field(
-        sa_column = Column(
-            pg.UUID,
-            nullable = False,
-            primary_key=True,
-            default=uuid.uuid4()
-        )
+class User(SQLModel, table=True):  # Use SQLModel as the base class and include `table=True`
+    uid: uuid.UUID = Field(
+        default_factory=uuid.uuid4,
+        primary_key=True,
+        sa_column_kwargs={"nullable": False}
     )
-    username:str
-    email:str
-    first_name:str
-    last_name:str
-    is_verified:bool = Field(default=False)
-    created_at: datetime = Field(sa_column = Column(pg.TIMESTAMP, default=datetime.now))
-    update_at: datetime = Field(sa_column = Column(pg.TIMESTAMP, default=datetime.now))
+    username: str = Field(nullable=False, unique=True)
+    email: str = Field(nullable=False, unique=True)
+    first_name: str = Field(default=None)
+    last_name: str = Field(default=None)
+    is_verified: bool = Field(default=False)
+    password_hash: str = Field(nullable=False, exclude=True)
+    created_at: datetime = Field(
+        default_factory=datetime.utcnow,
+        sa_column_kwargs={"nullable": False, "default": datetime.utcnow},
+    )
+    updated_at: datetime = Field(
+        default_factory=datetime.utcnow,
+        sa_column_kwargs={"nullable": False, "default": datetime.utcnow, "onupdate": datetime.utcnow},
+    )
 
     def __repr__(self):
         return f"<User {self.username}>"
