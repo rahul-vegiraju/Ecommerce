@@ -32,7 +32,7 @@ Implemented CRUD operations for interacting with the database.
 Abstracted CRUD logic into service classes to adhere to clean code principles.
 Used dependency injection to pass services into API path handlers, ensuring scalability and testability.
 
-## Technologies Used:
+## Technologies/Websites Used:
 
 FastAPI: A modern web framework for building APIs with Python, known for its speed and ease of use.
 
@@ -41,6 +41,10 @@ SQLAlchemy (via SQLModel): An ORM and database toolkit for defining and interact
 PostgreSQL: A powerful, open-source relational database system used for persistent data storage.
 
 Python: The programming language used to develop the project.
+
+Restfox: cross-platform API testing and debugging tool 
+
+Console.neon.tech: Provides an intuitive web-based UI to create, manage, and monitor PostgreSQL databases hosted on the Neon cloud platform.
 
 ## Commands For You to Use:
 
@@ -59,5 +63,7 @@ fastapi dev src/
 
 Might need to install: 
 pip install fastapi, pip install --upgrade pip, pip install "fastapi[standard]", pip install psycopg2-binarypip, pip install asyncpg, pip install pydantic-settings, pip install sqlmodel
+
+Make sure to use the connection string given by console.neon.tech once you make an account. You place the connection string inside of the .env file and set it inside of DATABASE_URL = "".
 
 
