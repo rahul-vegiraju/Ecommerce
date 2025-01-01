@@ -51,7 +51,7 @@ Console.neon.tech: Provides an intuitive web-based UI to create, manage, and mon
 ### Cloning Repository: 
 ```git clone https://github.com/rahul-vegiraju/Ecommerce.git```
 
-cd Ecommerce
+```cd Ecommerce```
 
 ###  Create a Virtual Environment and Install Dependencies:
 
