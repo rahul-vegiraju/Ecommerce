@@ -64,6 +64,6 @@ To Run the project:
 Might need to install: 
 ```pip install fastapi```, ```pip install --upgrade pip```, ```pip install "fastapi[standard]"```, ```pip install psycopg2-binarypip```, ```pip install asyncpg```, ```pip install pydantic-settings```, ```pip install sqlmodel```
 
-Make sure to use the connection string given by console.neon.tech once you make an account. You place the connection string inside of the .env file and set it inside of DATABASE_URL = "". MAKE SURE TO remove "```?sslmode=require```" at the end in order for it to work.
+Make sure to use the connection string given by console.neon.tech once you make an account. You place the connection string inside of the .env file and set it inside of ```DATABASE_URL = ""```. MAKE SURE TO remove "```?sslmode=require```" at the end in order for it to work.
 
 
