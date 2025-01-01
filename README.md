@@ -49,21 +49,21 @@ Console.neon.tech: Provides an intuitive web-based UI to create, manage, and mon
 ## Commands For You to Use:
 
 ### Cloning Repository: 
-git clone https://github.com/rahul-vegiraju/Ecommerce.git
+```git clone https://github.com/rahul-vegiraju/Ecommerce.git```
 
 cd Ecommerce
 
 ###  Create a Virtual Environment and Install Dependencies:
 
-python -m venv env, source env/bin/activate, pip install -r requirements.txt
+```python -m venv env```, ```source env/bin/activate```, ```pip install -r requirements.txt```
 
 ### Additional commands:
 To Run the project: 
-fastapi dev src/
+```fastapi dev src/```
 
 Might need to install: 
-pip install fastapi, pip install --upgrade pip, pip install "fastapi[standard]", pip install psycopg2-binarypip, pip install asyncpg, pip install pydantic-settings, pip install sqlmodel
+```pip install fastapi```, ```pip install --upgrade pip```, ```pip install "fastapi[standard]"```, ```pip install psycopg2-binarypip```, ```pip install asyncpg```, ```pip install pydantic-settings```, ```pip install sqlmodel```
 
-Make sure to use the connection string given by console.neon.tech once you make an account. You place the connection string inside of the .env file and set it inside of DATABASE_URL = "". MAKE SURE TO remove "?sslmode=require" at the end in order for it to work.
+Make sure to use the connection string given by console.neon.tech once you make an account. You place the connection string inside of the .env file and set it inside of DATABASE_URL = "". MAKE SURE TO remove "```?sslmode=require```" at the end in order for it to work.
 
 
